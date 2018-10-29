@@ -6,4 +6,6 @@ function Hello() {
   return <div>Hello</div>;
 }
 
-ReactDOM.render(<Hello />, document.getElementById("root"));
+const root = document.createElement("div");
+document.body.appendChild(root)
+ReactDOM.render(<Hello />, root);
